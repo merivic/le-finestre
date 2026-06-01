@@ -154,7 +154,7 @@ export default function Home() {
 
       {/* NAV */}
       <nav style={{ background: "#2A2A2A", color: "#FAF8F4", padding: "16px 24px", display: "flex", justifyContent: "space-between", alignItems: "center", position: "sticky", top: 0, zIndex: 50 }}>
-        <span style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "1.6rem", letterSpacing: "0.4em", fontWeight: 300 }}>Le Finestre</span>
+        <img src="/logo.png" alt="Le Finestre" style={{ height: "40px", objectFit: "contain" }} />
         <div style={{ display: "flex", gap: "24px", fontSize: "0.8rem", letterSpacing: "0.12em" }} className="nav-links">
           <a href="#views" style={{ color: "#FAF8F4", textDecoration: "none" }}>Le viste</a>
           <a href="#amenities" style={{ color: "#FAF8F4", textDecoration: "none" }}>Servizi</a>
@@ -174,7 +174,7 @@ export default function Home() {
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(42,42,42,0.7) 0%, rgba(42,42,42,0.1) 60%)" }} />
         <div style={{ position: "relative", zIndex: 2, textAlign: "center", color: "#FAF8F4", padding: "0 24px" }}>
           <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.8rem", letterSpacing: "0.4em", textTransform: "none", marginBottom: "16px", opacity: 0.7 }}>Citta della Pieve · Umbria · Italia</p>
-          <h1 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)", fontWeight: 300, letterSpacing: "0.4em", lineHeight: 1, margin: "0 0 24px 0" }}>Le Finestre</h1>
+          <img src="/logo.png" alt="Le Finestre" style={{ width: "40vw", maxWidth: "500px", objectFit: "contain", display: "block", margin: "0 auto 8px auto", mixBlendMode: "normal" }} />
           <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(0.85rem, 1.1vw, 1rem)", fontWeight: 300, fontStyle: "normal", opacity: 0.9, marginBottom: "40px" }}>Appartamento in affitto mensile con vista sull'Umbria.</p>
           <a href="#views" style={{ border: "1px solid rgba(250,248,244,0.6)", color: "#FAF8F4", padding: "14px 40px", textDecoration: "none", fontSize: "0.8rem", letterSpacing: "0.2em", textTransform: "none" }}>Scopri</a>
         </div>

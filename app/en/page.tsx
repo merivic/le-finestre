@@ -179,13 +179,13 @@ export default function Home() {
       {/* APARTMENT */}
       <section id="apartment" style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
         <p style={{ fontSize: "0.82rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "24px", fontStyle: "normal" }}>
-          Le Finestre is a recently renovated 85 sqm apartment located at the entrance of the historic centre of Città della Pieve, on the top floor of an elegant early 20th-century building. The apartment features two spacious bedrooms, two bathrooms, a large living room and a fully equipped kitchen.
+          Le Finestre is a recently renovated 85 sqm apartment located at the entrance of the historic centre of Città della Pieve, on the top floor of an elegant early 20th-century building. The apartment features two spacious bedrooms, one of which has a desk, two bathrooms, a large living room and a fully equipped kitchen. The apartment is on the second floor, with no lift. A stairlift is available to assist access.
         </p>
         <p style={{ fontSize: "0.82rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "48px" }}>
-          Its most distinctive feature is the extraordinary 360-degree view over Città della Pieve and the surrounding Umbrian landscape. Its large windows flood the rooms with light and offer unique glimpses of Lake Trasimeno, Monte Arale, the medieval fortress and the historic centre. The apartment also includes a private and secure parking space.
+          Its most distinctive feature is the extraordinary 360-degree view over Città della Pieve and the surrounding Umbrian landscape. Its large windows flood the rooms with light and offer unique glimpses of Lake Trasimeno, Monteleone, Monte Arale, the medieval fortress and the historic centre. The apartment also includes a private and secure parking space.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", maxWidth: "400px", margin: "0 auto" }}>
-          {[{label:"Size",value:"85 m²"},{label:"Bedrooms",value:"2"},{label:"Bathrooms",value:"2"},{label:"Guests",value:"Up to 4"},{label:"Min. Stay",value:"1 month"},{label:"Floor",value:"2° piano"}].map((item) => (
+          {[{label:"Size",value:"85 m²"},{label:"Bedrooms",value:"2"},{label:"Bathrooms",value:"2"},{label:"Guests",value:"Up to 4"},{label:"Min. Stay",value:"4 weeks"},{label:"Floor",value:"2° piano"}].map((item) => (
             <div key={item.label} style={{ borderTop: "1px solid #D4C9B0", paddingTop: "16px" }}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: "#999", marginBottom: "6px" }}>{item.label}</p>
               <p style={{ fontSize: "0.82rem", fontWeight: 400, color: "#2A2A2A" }}>{item.value}</p>
@@ -233,8 +233,8 @@ export default function Home() {
           {[
             {cat:"Work",items:["WiFi 1Gbps","Dedicated desk"]},
             {cat:"Kitchen",items:["Fully equipped","Dishwasher","Weekly market and supermarket nearby"]},
-            {cat:"Comfort",items:["A/C & heating","Washing machine","Sofa bed in living room for 1/2 extra guests","Television"]},
-            {cat:"Extras",items:["Secure parking","Bike storage"]},
+            {cat:"Comfort",items:["A/C & heating","Washing machine","Sofa bed in living room for 1 or 2 extra guests","Television"]},
+            {cat:"Extras",items:["Private and secure parking","Bike storage","Stairlift"]},
           ].map((group) => (
             <div key={group.cat}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: "#38596d", marginBottom: "16px", fontWeight: 600 }}>{group.cat}</p>
@@ -268,7 +268,7 @@ One of its great advantages is its strategic location, ideal for exploring Umbri
               ))}
             </div>
           </div>
-          <div style={{ height: "480px", borderRadius: "2px", overflow: "hidden" }}><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.5!2d12.0!3d42.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132b5!2sViale+Marconi+1%2C+Citt%C3%A0+della+Pieve!5e0!3m2!1sit!2sit!4v1" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy"></iframe></div>
+          <div style={{ height: "480px", borderRadius: "2px", overflow: "hidden" }}><iframe src="https://maps.google.com/maps?q=Via+Marconi+1,+06062+Citta+della+Pieve+PG,+Italy&z=16&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy"></iframe></div>
         </div>
       </section>
 
@@ -323,7 +323,7 @@ One of its great advantages is its strategic location, ideal for exploring Umbri
                   <textarea placeholder="Tell us about your stay..." rows={4} style={{ width: "100%", background: "rgba(250,248,244,0.06)", border: "1px solid rgba(250,248,244,0.15)", padding: "14px 16px", color: "#FAF8F4", fontSize: "0.85rem", resize: "vertical", outline: "none", boxSizing: "border-box" }} />
                 </div>
                 <button style={{ background: "#38596d", color: "#FAF8F4", padding: "16px 32px", border: "none", fontSize: "0.8rem", letterSpacing: "0.1em", cursor: "pointer", marginTop: "8px" }}>Send enquiry</button>
-                <p style={{ fontSize: "0.8rem", color: "rgba(250,248,244,0.4)", marginTop: "8px" }}>Or email us: <a href="mailto:hello@lefinestre.it" style={{ color: "#7A9FB0", textDecoration: "none" }}>hello@lefinestre.it</a></p>
+                <p style={{ fontSize: "0.8rem", color: "rgba(250,248,244,0.4)", marginTop: "8px" }}>Or email us: <a href="mailto:lefinestrecdp@gmail.com" style={{ color: "#7A9FB0", textDecoration: "none" }}>lefinestrecdp@gmail.com</a></p>
               </div>
             </div>
 

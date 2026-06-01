@@ -183,13 +183,13 @@ export default function Home() {
       {/* APARTMENT */}
       <section id="apartment" style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
         <p style={{ fontSize: "0.82rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "24px", fontStyle: "normal" }}>
-          Le Finestre è un appartamento di 85 mq recentemente rinnovato, situato all’ingresso del centro storico di Città della Pieve, all’ultimo piano di un elegante palazzo storico dei primi del Novecento. L’appartamento dispone di due ampie camere da letto, due bagni, un grande soggiorno e una cucina completamente attrezzata, offrendo spazi confortevoli e funzionali per ogni tipo di soggiorno.
+          Le Finestre è un appartamento di 85 mq recentemente rinnovato, situato all’ingresso del centro storico di Città della Pieve, all’ultimo piano di un elegante palazzo storico dei primi del Novecento. L’appartamento dispone di due ampie camere da letto, di cui una con scrivania, due bagni, un grande soggiorno e una cucina completamente attrezzata, offrendo spazi confortevoli e funzionali per ogni tipo di soggiorno. L’appartamento si trova al secondo piano, senza ascensore. Un montascale a poltroncina favorisce l’accesso all’appartamento.
         </p>
         <p style={{ fontSize: "0.82rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "48px" }}>
-          La sua caratteristica più distintiva è la straordinaria vista a 360° su Città della Pieve e sul paesaggio umbro circostante. Le sue grandi finestre regalano luminosità e freschezza agli ambienti e offrono scorci unici sul Lago Trasimeno, Monte Arale, la Rocca medievale e il centro storico. A completare l’esperienza, l’appartamento dispone di un posto auto privato e sicuro, una comodità rara e preziosa nel cuore della città.
+          La sua caratteristica più distintiva è la straordinaria vista a 360° su Città della Pieve e sul paesaggio umbro circostante. Le sue grandi finestre regalano luminosità e freschezza agli ambienti e offrono scorci unici sul Lago Trasimeno, Monteleone, Monte Arale, la Rocca medievale e il centro storico. A completare l’esperienza, l’appartamento dispone di un posto auto privato e sicuro, una comodità rara e preziosa nel cuore della città.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", maxWidth: "400px", margin: "0 auto" }}>
-          {[{label:"Dimensioni",value:"85 m²"},{label:"Camere",value:"2"},{label:"Bagni",value:"2"},{label:"Ospiti",value:"Fino a 4"},{label:"Soggiorno min.",value:"1 mese"},{label:"Piano",value:"2° piano"}].map((item) => (
+          {[{label:"Dimensioni",value:"85 m²"},{label:"Camere",value:"2"},{label:"Bagni",value:"2"},{label:"Ospiti",value:"Fino a 4"},{label:"Soggiorno min.",value:"4 settimane"},{label:"Piano",value:"2° piano"}].map((item) => (
             <div key={item.label} style={{ borderTop: "1px solid #D4C9B0", paddingTop: "16px" }}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: "#999", marginBottom: "6px" }}>{item.label}</p>
               <p style={{ fontSize: "0.82rem", fontWeight: 400, color: "#2A2A2A" }}>{item.value}</p>
@@ -237,8 +237,8 @@ export default function Home() {
           {[
             {cat:"Lavoro",items:["WiFi 1Gbps","Scrivania dedicata"]},
             {cat:"Cucina",items:["Completamente attrezzata","Lavastoviglie","Mercato settimanale e supermercato a due passi"]},
-            {cat:"Comfort",items:["Ventilazione e riscaldamento","Lavatrice","Divano letto nel soggiorno per 1/2 ospiti aggiuntivi","Televisione"]},
-            {cat:"Extra",items:["Parcheggio sicuro","Deposito biciclette"]},
+            {cat:"Comfort",items:["Ventilazione e riscaldamento","Lavatrice","Divano letto nel soggiorno per 1 o 2 ospiti aggiuntivi","Televisione"]},
+            {cat:"Extra",items:["Parcheggio privato e sicurizzato","Deposito biciclette","Montascale a poltroncina"]},
           ].map((group) => (
             <div key={group.cat}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: "#38596d", marginBottom: "16px", fontWeight: 600 }}>{group.cat}</p>
@@ -272,7 +272,7 @@ Uno dei suoi grandi vantaggi è la posizione strategica, ideale per scoprire l�
               ))}
             </div>
           </div>
-          <div style={{ height: "480px", borderRadius: "2px", overflow: "hidden" }}><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.5!2d12.0!3d42.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132b5!2sViale+Marconi+1%2C+Citt%C3%A0+della+Pieve!5e0!3m2!1sit!2sit!4v1" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy"></iframe></div>
+          <div style={{ height: "480px", borderRadius: "2px", overflow: "hidden" }}><iframe src="https://maps.google.com/maps?q=Via+Marconi+1,+06062+Citta+della+Pieve+PG,+Italy&z=16&output=embed" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy"></iframe></div>
         </div>
       </section>
 
@@ -327,7 +327,7 @@ Uno dei suoi grandi vantaggi è la posizione strategica, ideale per scoprire l�
                   <textarea placeholder="Parlaci del tuo soggiorno..." rows={4} style={{ width: "100%", background: "rgba(250,248,244,0.06)", border: "1px solid rgba(250,248,244,0.15)", padding: "14px 16px", color: "#FAF8F4", fontSize: "0.85rem", resize: "vertical", outline: "none", boxSizing: "border-box" }} />
                 </div>
                 <button style={{ background: "#38596d", color: "#FAF8F4", padding: "16px 32px", border: "none", fontSize: "0.8rem", letterSpacing: "0.1em", cursor: "pointer", marginTop: "8px" }}>Invia richiesta</button>
-                <p style={{ fontSize: "0.8rem", color: "rgba(250,248,244,0.4)", marginTop: "8px" }}>O scrivici: <a href="mailto:hello@lefinestre.it" style={{ color: "#7A9FB0", textDecoration: "none" }}>hello@lefinestre.it</a></p>
+                <p style={{ fontSize: "0.8rem", color: "rgba(250,248,244,0.4)", marginTop: "8px" }}>O scrivici: <a href="mailto:lefinestrecdp@gmail.com" style={{ color: "#7A9FB0", textDecoration: "none" }}>lefinestrecdp@gmail.com</a></p>
               </div>
             </div>
 

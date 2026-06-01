@@ -327,7 +327,7 @@ Uno dei suoi grandi vantaggi Ã¨ la posizione strategica, ideale per scoprire lâ€
                   <textarea placeholder="Parlaci del tuo soggiorno..." rows={4} style={{ width: "100%", background: "rgba(250,248,244,0.06)", border: "1px solid rgba(250,248,244,0.15)", padding: "14px 16px", color: "#FAF8F4", fontSize: "0.85rem", resize: "vertical", outline: "none", boxSizing: "border-box" }} />
                 </div>
                 <a href="mailto:lefinestrecdp@gmail.com?subject=Richiesta soggiorno Le Finestre" style={{ display: "block", textAlign: "center", background: "#38596d", color: "#FAF8F4", padding: "16px 32px", textDecoration: "none", fontSize: "0.8rem", letterSpacing: "0.1em", marginTop: "8px" }}>Invia richiesta</a>
-                <p style={{ fontSize: "0.8rem", color: "rgba(250,248,244,0.4)", marginTop: "8px" }}>O scrivici: <a href="mailto:lefinestrecdp@gmail.com" style={{ color: "#7A9FB0", textDecoration: "none" }}>lefinestrecdp@gmail.com</a></p>
+                
               </div>
             </div>
 

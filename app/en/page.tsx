@@ -322,8 +322,8 @@ One of its great advantages is its strategic location, ideal for exploring Umbri
                   <label style={{ fontSize: "0.7rem", letterSpacing: "0.15em", color: "#7A9FB0", display: "block", marginBottom: "8px" }}>Messaggio</label>
                   <textarea placeholder="Tell us about your stay..." rows={4} style={{ width: "100%", background: "rgba(250,248,244,0.06)", border: "1px solid rgba(250,248,244,0.15)", padding: "14px 16px", color: "#FAF8F4", fontSize: "0.85rem", resize: "vertical", outline: "none", boxSizing: "border-box" }} />
                 </div>
-                <button style={{ background: "#38596d", color: "#FAF8F4", padding: "16px 32px", border: "none", fontSize: "0.8rem", letterSpacing: "0.1em", cursor: "pointer", marginTop: "8px" }}>Send enquiry</button>
-                <p style={{ fontSize: "0.8rem", color: "rgba(250,248,244,0.4)", marginTop: "8px" }}>Or email us: <a href="mailto:lefinestrecdp@gmail.com" style={{ color: "#7A9FB0", textDecoration: "none" }}>lefinestrecdp@gmail.com</a></p>
+                <a href="mailto:lefinestrecdp@gmail.com?subject=Booking%20request%20Le%20Finestre" style={{ display: "block", textAlign: "center", background: "#38596d", color: "#FAF8F4", padding: "16px 32px", textDecoration: "none", fontSize: "0.8rem", letterSpacing: "0.1em", marginTop: "8px", cursor: "pointer" }}>Send enquiry</a>
+                
               </div>
             </div>
 

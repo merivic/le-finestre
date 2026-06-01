@@ -66,7 +66,7 @@ function CalendarWidget() {
           </div>
         ))}
       </div>
-      <p style={{ fontSize: "0.75rem", color: "#AAA", marginTop: "20px", textAlign: "center" }}>Per prenotare contattaci direttamente</p>
+      <p style={{ fontSize: "0.75rem", color: "#AAA", marginTop: "20px", textAlign: "center" }}>Contact us directly to book</p>
     </div>
   )
 }
@@ -75,10 +75,10 @@ export default function Home() {
   const [activeWindow, setActiveWindow] = useState<number | null>(null);
 
   const windows = [
-    { view: "/view1.jpeg", label: "Il monumento" },
-    { view: "/view2.jpeg", label: "La rocca Medievale" },
-    { view: "/view3.jpeg", label: "Il centro storico" },
-    { view: "/view4.jpeg", label: "Il lago Trasimeno" },
+    { view: "/view1.jpeg", label: "The monument" },
+    { view: "/view2.jpeg", label: "The medieval fortress" },
+    { view: "/view3.jpeg", label: "The historic centre" },
+    { view: "/view4.jpeg", label: "Lake Trasimeno" },
   ];
 
   return (
@@ -146,26 +146,22 @@ export default function Home() {
           .nav-links { display: none !important; }
           .window-frame { height: 320px !important; }
         }
-        @media (max-width: 768px) {
-          .nav-links { display: none !important; }
-          .window-frame { height: 320px !important; }
-        }
       `}</style>
 
       {/* NAV */}
       <nav style={{ background: "#2A2A2A", color: "#FAF8F4", padding: "16px 24px", display: "flex", justifyContent: "space-between", alignItems: "center", position: "sticky", top: 0, zIndex: 50 }}>
         <span style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "1.6rem", letterSpacing: "0.4em", fontWeight: 300 }}>Le Finestre</span>
         <div style={{ display: "flex", gap: "24px", fontSize: "0.8rem", letterSpacing: "0.12em" }} className="nav-links">
-          <a href="#views" style={{ color: "#FAF8F4", textDecoration: "none" }}>Le viste</a>
-          <a href="#amenities" style={{ color: "#FAF8F4", textDecoration: "none" }}>Servizi</a>
-          <a href="#location" style={{ color: "#FAF8F4", textDecoration: "none" }}>Posizione</a>
-          <a href="#rates" style={{ color: "#FAF8F4", textDecoration: "none" }}>Tariffe</a>
-          <a href="#contact" style={{ color: "#FAF8F4", textDecoration: "none" }}>Contatto</a>
+          <a href="#views" style={{ color: "#FAF8F4", textDecoration: "none" }}>Views</a>
+          <a href="#amenities" style={{ color: "#FAF8F4", textDecoration: "none" }}>Amenities</a>
+          <a href="#location" style={{ color: "#FAF8F4", textDecoration: "none" }}>Location</a>
+          <a href="#rates" style={{ color: "#FAF8F4", textDecoration: "none" }}>Rates</a>
+          <a href="#contact" style={{ color: "#FAF8F4", textDecoration: "none" }}>Contact</a>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <a href="/" style={{ fontSize: "1.2rem", textDecoration: "none", opacity: 1 }} title="Italiano">🇮🇹</a>
-          <a href="/en" style={{ fontSize: "1.2rem", textDecoration: "none", opacity: 0.5 }} title="English">🇬🇧</a>
-          <a href="#contact" style={{ border: "1px solid #FAF8F4", color: "#FAF8F4", padding: "10px 24px", textDecoration: "none", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "none" }}>Prenota</a>
+          <a href="/" style={{ fontSize: "1.2rem", textDecoration: "none", opacity: 0.5 }} title="Italiano">🇮🇹</a>
+          <a href="/en" style={{ fontSize: "1.2rem", textDecoration: "none", opacity: 1 }} title="English">🇬🇧</a>
+          <a href="#contact" style={{ border: "1px solid #FAF8F4", color: "#FAF8F4", padding: "10px 24px", textDecoration: "none", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "none" }}>Book Now</a>
         </div>
       </nav>
 
@@ -173,23 +169,23 @@ export default function Home() {
       <section style={{ height: "100vh", background: "url('/exterior.jpeg') center 70%/cover no-repeat", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 0 80px 0", position: "relative" }}>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(42,42,42,0.7) 0%, rgba(42,42,42,0.1) 60%)" }} />
         <div style={{ position: "relative", zIndex: 2, textAlign: "center", color: "#FAF8F4", padding: "0 24px" }}>
-          <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.8rem", letterSpacing: "0.4em", textTransform: "none", marginBottom: "16px", opacity: 0.7 }}>Citta della Pieve · Umbria · Italia</p>
+          <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.8rem", letterSpacing: "0.4em", textTransform: "none", marginBottom: "16px", opacity: 0.7 }}>Citta della Pieve · Umbria · Italy</p>
           <h1 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(2rem, 5vw, 4rem)", fontWeight: 300, letterSpacing: "0.4em", lineHeight: 1, margin: "0 0 24px 0" }}>Le Finestre</h1>
-          <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(0.85rem, 1.1vw, 1rem)", fontWeight: 300, fontStyle: "normal", opacity: 0.9, marginBottom: "40px" }}>Appartamento in affitto mensile con vista sull'Umbria.</p>
-          <a href="#views" style={{ border: "1px solid rgba(250,248,244,0.6)", color: "#FAF8F4", padding: "14px 40px", textDecoration: "none", fontSize: "0.8rem", letterSpacing: "0.2em", textTransform: "none" }}>Scopri</a>
+          <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(0.85rem, 1.1vw, 1rem)", fontWeight: 300, fontStyle: "normal", opacity: 0.9, marginBottom: "40px" }}>Monthly rental apartment with views over Umbria.</p>
+          <a href="#views" style={{ border: "1px solid rgba(250,248,244,0.6)", color: "#FAF8F4", padding: "14px 40px", textDecoration: "none", fontSize: "0.8rem", letterSpacing: "0.2em", textTransform: "none" }}>Discover</a>
         </div>
       </section>
 
       {/* APARTMENT */}
       <section id="apartment" style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
         <p style={{ fontSize: "0.82rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "24px", fontStyle: "normal" }}>
-          Le Finestre è un appartamento di 85 mq recentemente rinnovato, situato all’ingresso del centro storico di Città della Pieve, all’ultimo piano di un elegante palazzo storico dei primi del Novecento. L’appartamento dispone di due ampie camere da letto, due bagni, un grande soggiorno e una cucina completamente attrezzata, offrendo spazi confortevoli e funzionali per ogni tipo di soggiorno.
+          Le Finestre is a recently renovated 85 sqm apartment located at the entrance of the historic centre of Città della Pieve, on the top floor of an elegant early 20th-century building. The apartment features two spacious bedrooms, two bathrooms, a large living room and a fully equipped kitchen.
         </p>
         <p style={{ fontSize: "0.82rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "48px" }}>
-          La sua caratteristica più distintiva è la straordinaria vista a 360° su Città della Pieve e sul paesaggio umbro circostante. Le sue grandi finestre regalano luminosità e freschezza agli ambienti e offrono scorci unici sul Lago Trasimeno, Monte Arale, la Rocca medievale e il centro storico. A completare l’esperienza, l’appartamento dispone di un posto auto privato e sicuro, una comodità rara e preziosa nel cuore della città.
+          Its most distinctive feature is the extraordinary 360-degree view over Città della Pieve and the surrounding Umbrian landscape. Its large windows flood the rooms with light and offer unique glimpses of Lake Trasimeno, Monte Arale, the medieval fortress and the historic centre. The apartment also includes a private and secure parking space.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", maxWidth: "400px", margin: "0 auto" }}>
-          {[{label:"Dimensioni",value:"85 m²"},{label:"Camere",value:"2"},{label:"Bagni",value:"2"},{label:"Ospiti",value:"Fino a 4"},{label:"Soggiorno min.",value:"1 mese"},{label:"Piano",value:"2° piano"}].map((item) => (
+          {[{label:"Size",value:"85 m²"},{label:"Bedrooms",value:"2"},{label:"Bathrooms",value:"2"},{label:"Guests",value:"Up to 4"},{label:"Min. Stay",value:"1 month"},{label:"Floor",value:"2° piano"}].map((item) => (
             <div key={item.label} style={{ borderTop: "1px solid #D4C9B0", paddingTop: "16px" }}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: "#999", marginBottom: "6px" }}>{item.label}</p>
               <p style={{ fontSize: "0.82rem", fontWeight: 400, color: "#2A2A2A" }}>{item.value}</p>
@@ -200,7 +196,7 @@ export default function Home() {
 
       {/* WINDOWS / GALLERY */}
       <section id="views" style={{ padding: "40px 24px", background: "#2A2A2A" }}>
-        <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.85rem", color: "rgba(250,248,244,0.5)", textAlign: "center", marginBottom: "48px", letterSpacing: "0.05em" }}>Clicca su una finestra per esplorare la stanza</p>
+        <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.85rem", color: "rgba(250,248,244,0.5)", textAlign: "center", marginBottom: "48px", letterSpacing: "0.05em" }}>Click a window to explore the room</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "12px", maxWidth: "600px", margin: "0 auto" }}>
           {windows.map((w, i) => (
             <div
@@ -215,8 +211,8 @@ export default function Home() {
               <div className="window-label">{w.label}</div>
               {activeWindow === i && (
                 <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(42,42,42,0.85)", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: "12px", padding: "20px" }}>
-                  <p style={{ color: "#FAF8F4", fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.85rem", fontStyle: "normal", textAlign: "center", opacity: 0.8 }}>Foto delle stanze in arrivo</p>
-                  <p style={{ color: "#7A9FB0", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none" }}>Clicca per chiudere</p>
+                  <p style={{ color: "#FAF8F4", fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.85rem", fontStyle: "normal", textAlign: "center", opacity: 0.8 }}>Room photos coming soon</p>
+                  <p style={{ color: "#7A9FB0", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none" }}>Click to close</p>
                 </div>
               )}
             </div>
@@ -226,19 +222,19 @@ export default function Home() {
 
       {/* VIRTUAL TOUR */}
       <div style={{ background: "#2A2A2A", textAlign: "center", padding: "20px 48px" }}>
-        <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.8rem", letterSpacing: "0.15em", color: "rgba(250,248,244,0.5)" }}>Visita virtuale disponibile su richiesta · <a href="#contact" style={{ color: "#7A9FB0", textDecoration: "none" }}>Contattaci</a></p>
+        <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.8rem", letterSpacing: "0.15em", color: "rgba(250,248,244,0.5)" }}>Virtual tour available on request · <a href="#contact" style={{ color: "#7A9FB0", textDecoration: "none" }}>Contact us</a></p>
       </div>
 
       {/* AMENITIES */}
-      <section id="amenities" style={{ padding: "60px 24px", maxWidth: "1300px", margin: "0 auto" }}>
-        <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Servizi</p>
-        <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "48px" }}>Tutto il necessario per un lungo soggiorno.</h2>
+      <section id="amenities" style={{ padding: "60px 24px", maxWidth: "1200px", margin: "0 auto" }}>
+        <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Amenities</p>
+        <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "48px" }}>Everything you need for a long stay.</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "32px" }}>
           {[
-            {cat:"Lavoro",items:["WiFi 1Gbps","Scrivania dedicata"]},
-            {cat:"Cucina",items:["Completamente attrezzata","Lavastoviglie","Mercato settimanale e supermercato a due passi"]},
-            {cat:"Comfort",items:["Ventilazione e riscaldamento","Lavatrice","Divano letto nel soggiorno per 1/2 ospiti aggiuntivi","Televisione"]},
-            {cat:"Extra",items:["Parcheggio sicuro","Deposito biciclette"]},
+            {cat:"Work",items:["WiFi 1Gbps","Dedicated desk"]},
+            {cat:"Kitchen",items:["Fully equipped","Dishwasher","Weekly market and supermarket nearby"]},
+            {cat:"Comfort",items:["A/C & heating","Washing machine","Sofa bed in living room for 1/2 extra guests","Television"]},
+            {cat:"Extras",items:["Secure parking","Bike storage"]},
           ].map((group) => (
             <div key={group.cat}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: "#38596d", marginBottom: "16px", fontWeight: 600 }}>{group.cat}</p>
@@ -256,15 +252,15 @@ export default function Home() {
       <section id="location" style={{ padding: "60px 24px", background: "#EDE7DB" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr", gap: "40px" }}>
           <div>
-            <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Posizione</p>
+            <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Location</p>
             <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "24px" }}>Città della Pieve, Umbria.</h2>
-            <p style={{ fontSize: "0.9rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "32px" }}>Città della Pieve, in Umbria, sorge arroccata su un colle a circa 508 metri di altitudine, affacciata sulla Val di Chiana e a pochi chilometri dal confine con la Toscana. È un borgo medievale autentico, costruito in gran parte in mattoni a vista, con vicoli silenziosi, scorci suggestivi e un’atmosfera elegante e senza tempo. Città natale del Perugino, conserva un forte legame con l’arte e la tradizione.
+            <p style={{ fontSize: "0.9rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "32px" }}>Perched on a hilltop at 508m, Città della Pieve is one of Umbria's best-kept secrets. A medieval town built largely in exposed brick, with quiet alleys, evocative views and a timeless, elegant atmosphere. Birthplace of the Renaissance painter Perugino, it retains a strong connection with art and tradition.
 
-Pur mantenendo il fascino di un segreto umbro ancora poco conosciuto, Città della Pieve è un paese vivo e ricco di eventi durante tutto l’anno: dall’Infiorata al Palio dei Terzieri, da Zafferiamo a molte altre manifestazioni culturali e gastronomiche. Il borgo offre inoltre ristoranti di qualità dove scoprire la cucina umbra, tra sapori autentici, prodotti locali e ospitalità genuina.
+While retaining its charm as a little-known Umbrian secret, Città della Pieve is a lively town with events throughout the year: from the Infiorata to the Palio dei Terzieri, from Zafferiamo to many other cultural and gastronomic events. The town also offers quality restaurants to discover Umbrian cuisine.
 
-Uno dei suoi grandi vantaggi è la posizione strategica, ideale per scoprire l’Umbria, la Toscana e alcune delle città più belle del Centro Italia. Città della Pieve si trova a circa 10 minuti dall’uscita dell’autostrada A1 e vicino alla stazione ferroviaria di Chiusi-Chianciano Terme. In macchina si raggiungono facilmente:</p>
+One of its great advantages is its strategic location, ideal for exploring Umbria, Tuscany and some of the most beautiful cities in Central Italy. Città della Pieve is about 10 minutes from the A1 motorway exit and close to Chiusi-Chianciano Terme train station. By car you can easily reach:</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              {["Siena in circa 45 minuti","Perugia in circa 45 minuti","Firenze in circa 1h30","Roma in circa 1h30"].map((item) => (
+              {["Siena in about 45 minutes","Perugia in about 45 minutes","Florence in about 1h30","Rome in about 1h30"].map((item) => (
                 <div key={item} style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "0.82rem", color: "#4A4A4A" }}>
                   <span style={{ width: "6px", height: "6px", background: "#38596d", borderRadius: "50%", flexShrink: 0 }} />
                   {item}
@@ -277,46 +273,46 @@ Uno dei suoi grandi vantaggi è la posizione strategica, ideale per scoprire l�
       </section>
 
       {/* RATES */}
-      <section id="rates" style={{ padding: "60px 24px", maxWidth: "1300px", margin: "0 auto" }}>
-        <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Tariffe</p>
-        <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "48px" }}>Prezzi mensili con utenze incluse.</h2>
+      <section id="rates" style={{ padding: "60px 24px", maxWidth: "1200px", margin: "0 auto" }}>
+        <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Rates</p>
+        <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "48px" }}>Monthly rates, utilities included.</h2>
         
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", maxWidth: "400px", margin: "0 auto" }}>
           {[
-            {period:"Bassa stagione",months:"Nov - Mar",price:"900",featured:false},
-            {period:"Media stagione",months:"Apr-Giu e Set-Ott",price:"1.000",featured:true},
-            {period:"Alta stagione",months:"Lug - Ago",price:"1.200",featured:false},
+            {period:"Low Season",months:"Nov - Mar",price:"900",featured:false},
+            {period:"Mid Season",months:"Apr-Jun & Sep-Oct",price:"1.000",featured:true},
+            {period:"Jul - Aug",months:"Lug - Ago",price:"1.200",featured:false},
           ].map((rate) => (
             <div key={rate.period} style={{ background: rate.featured ? "#2A2A2A" : "#EDE7DB", padding: "40px 32px", color: rate.featured ? "#FAF8F4" : "#2A2A2A" }}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: rate.featured ? "#7A9FB0" : "#38596d", marginBottom: "8px" }}>{rate.period}</p>
               <p style={{ fontSize: "0.9rem", color: rate.featured ? "rgba(250,248,244,0.5)" : "#888", marginBottom: "24px" }}>{rate.months}</p>
               <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "3rem", fontWeight: 300, marginBottom: "8px" }}>{"€" + rate.price}</p>
-              <p style={{ fontSize: "0.85rem", color: rate.featured ? "rgba(250,248,244,0.5)" : "#888", marginBottom: "32px" }}>al mese, utenze incluse</p>
+              <p style={{ fontSize: "0.85rem", color: rate.featured ? "rgba(250,248,244,0.5)" : "#888", marginBottom: "32px" }}>per month, utilities included</p>
 
             </div>
           ))}
         </div>
-        <p style={{ fontSize: "0.85rem", color: "#888", marginTop: "24px", textAlign: "center" }}>Soggiorno minimo: 1 mese · Utenze incluse</p>
+        <p style={{ fontSize: "0.85rem", color: "#888", marginTop: "24px", textAlign: "center" }}>Minimum stay: 1 month · Utilities included</p>
       </section>
 
       {/* CONTATTO + CALENDARIO */}
       <section id="contact" style={{ padding: "60px 24px", background: "#2A2A2A", color: "#FAF8F4" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.5rem, 2.5vw, 2rem)", fontWeight: 400, marginBottom: "60px", textAlign: "center" }}>Pianifica il tuo soggiorno</h2>
+          <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.5rem, 2.5vw, 2rem)", fontWeight: 400, marginBottom: "60px", textAlign: "center" }}>Plan your stay</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "48px" }}>
             
             {/* Calendario */}
             <div>
-              <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Controlla disponibilità</p>
+              <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Check availability</p>
               <CalendarWidget />
             </div>
 
             {/* Formulario */}
             <div>
-              <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Contatto</p>
-              <p style={{ fontSize: "0.9rem", color: "rgba(250,248,244,0.6)", marginBottom: "32px", lineHeight: 1.8 }}>Dicci le tue date e ti risponderemo entro 24 ore.</p>
+              <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Contact</p>
+              <p style={{ fontSize: "0.9rem", color: "rgba(250,248,244,0.6)", marginBottom: "32px", lineHeight: 1.8 }}>Tell us your dates and we will get back to you within 24 hours.</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                {[{label:"Il tuo nome",type:"text",placeholder:"Marco Rossi"},{label:"Email",type:"email",placeholder:"marco@email.com"},{label:"Date",type:"text",placeholder:"Dal — Al"}].map((field) => (
+                {[{label:"Your name",type:"text",placeholder:"Marco Rossi"},{label:"Email",type:"email",placeholder:"marco@email.com"},{label:"Dates",type:"text",placeholder:"From — To"}].map((field) => (
                   <div key={field.label}>
                     <label style={{ fontSize: "0.7rem", letterSpacing: "0.15em", color: "#7A9FB0", display: "block", marginBottom: "8px" }}>{field.label}</label>
                     <input type={field.type} placeholder={field.placeholder} style={{ width: "100%", background: "rgba(250,248,244,0.06)", border: "1px solid rgba(250,248,244,0.15)", padding: "14px 16px", color: "#FAF8F4", fontSize: "0.85rem", outline: "none", boxSizing: "border-box" }} />
@@ -324,10 +320,10 @@ Uno dei suoi grandi vantaggi è la posizione strategica, ideale per scoprire l�
                 ))}
                 <div>
                   <label style={{ fontSize: "0.7rem", letterSpacing: "0.15em", color: "#7A9FB0", display: "block", marginBottom: "8px" }}>Messaggio</label>
-                  <textarea placeholder="Parlaci del tuo soggiorno..." rows={4} style={{ width: "100%", background: "rgba(250,248,244,0.06)", border: "1px solid rgba(250,248,244,0.15)", padding: "14px 16px", color: "#FAF8F4", fontSize: "0.85rem", resize: "vertical", outline: "none", boxSizing: "border-box" }} />
+                  <textarea placeholder="Tell us about your stay..." rows={4} style={{ width: "100%", background: "rgba(250,248,244,0.06)", border: "1px solid rgba(250,248,244,0.15)", padding: "14px 16px", color: "#FAF8F4", fontSize: "0.85rem", resize: "vertical", outline: "none", boxSizing: "border-box" }} />
                 </div>
-                <button style={{ background: "#38596d", color: "#FAF8F4", padding: "16px 32px", border: "none", fontSize: "0.8rem", letterSpacing: "0.1em", cursor: "pointer", marginTop: "8px" }}>Invia richiesta</button>
-                <p style={{ fontSize: "0.8rem", color: "rgba(250,248,244,0.4)", marginTop: "8px" }}>O scrivici: <a href="mailto:hello@lefinestre.it" style={{ color: "#7A9FB0", textDecoration: "none" }}>hello@lefinestre.it</a></p>
+                <button style={{ background: "#38596d", color: "#FAF8F4", padding: "16px 32px", border: "none", fontSize: "0.8rem", letterSpacing: "0.1em", cursor: "pointer", marginTop: "8px" }}>Send enquiry</button>
+                <p style={{ fontSize: "0.8rem", color: "rgba(250,248,244,0.4)", marginTop: "8px" }}>Or email us: <a href="mailto:hello@lefinestre.it" style={{ color: "#7A9FB0", textDecoration: "none" }}>hello@lefinestre.it</a></p>
               </div>
             </div>
 
@@ -338,7 +334,7 @@ Uno dei suoi grandi vantaggi è la posizione strategica, ideale per scoprire l�
             {/* FOOTER */}
       <footer style={{ background: "#1A1A1A", color: "rgba(250,248,244,0.4)", padding: "32px 48px", display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "0.75rem", letterSpacing: "0.1em" }}>
         <span style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.82rem", letterSpacing: "0.4em", fontWeight: 300, color: "rgba(250,248,244,0.7)" }}>Le Finestre</span>
-        <span>2026 · Città della Pieve · Tutti i diritti riservati</span>
+        <span>2026 · Città della Pieve · All rights reserved</span>
       </footer>
 
     </main>

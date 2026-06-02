@@ -183,13 +183,13 @@ export default function Home() {
       {/* APARTMENT */}
       <section id="apartment" style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
         <p style={{ fontSize: "0.82rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "24px", fontStyle: "normal" }}>
-          Le Finestre è un appartamento di 85 mq recentemente rinnovato, situato all’ingresso del centro storico di Città della Pieve, all’ultimo piano di un elegante palazzo storico dei primi del Novecento. L’appartamento dispone di due ampie camere da letto, di cui una con scrivania, due bagni, un grande soggiorno e una cucina completamente attrezzata, offrendo spazi confortevoli e funzionali per ogni tipo di soggiorno. L’appartamento si trova al secondo piano, senza ascensore. Un montascale a poltroncina favorisce l’accesso all’appartamento.
+          Le Finestre è un appartamento di 85 mq recentemente rinnovato, situato all’ingresso del centro storico di Città della Pieve, all’ultimo piano di un elegante palazzo storico dei primi del Novecento. L’appartamento dispone di due ampie camere da letto, di cui una con scrivania, due bagni, un grande soggiorno e una cucina completamente attrezzata, offrendo spazi confortevoli e funzionali per ogni tipo di soggiorno. L’appartamento si trova al secondo piano, senza ascensore. Un montascale a poltroncina favorisce l’accesso all’appartamento per persone con mobilità ridotta.
         </p>
         <p style={{ fontSize: "0.82rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "48px" }}>
-          La sua caratteristica più distintiva è la straordinaria vista a 360° su Città della Pieve e sul paesaggio umbro circostante. Le sue grandi finestre regalano luminosità e freschezza agli ambienti e offrono scorci unici sul Lago Trasimeno, Monteleone, Monte Arale, la Rocca medievale e il centro storico. A completare l’esperienza, l’appartamento dispone di un posto auto privato e sicuro, una comodità rara e preziosa nel cuore della città.
+          La sua caratteristica più distintiva è la straordinaria vista su Città della Pieve e sul paesaggio umbro circostante. Le sue grandi finestre regalano luminosità e freschezza agli ambienti e offrono scorci unici sul Lago Trasimeno, sul Monte Cetona, Montegabbione, Monte Arale, la Rocca medievale e il centro storico. A completare l’esperienza, l’appartamento dispone di un posto auto privato e sicuro, una comodità rara e preziosa nel cuore della città.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", maxWidth: "400px", margin: "0 auto" }}>
-          {[{label:"Dimensioni",value:"85 m²"},{label:"Camere",value:"2"},{label:"Bagni",value:"2"},{label:"Ospiti",value:"Fino a 4"},{label:"Soggiorno min.",value:"4 settimane"},{label:"Piano",value:"2° piano"}].map((item) => (
+          {[{label:"Dimensioni",value:"85 m²"},{label:"Camere",value:"2"},{label:"Bagni",value:"2"},{label:"Ospiti",value:"Fino a 4+1"},{label:"Soggiorno min.",value:"Un mese"},{label:"Piano",value:"2° e ultimo piano"}].map((item) => (
             <div key={item.label} style={{ borderTop: "1px solid #D4C9B0", paddingTop: "16px" }}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: "#999", marginBottom: "6px" }}>{item.label}</p>
               <p style={{ fontSize: "0.82rem", fontWeight: 400, color: "#2A2A2A" }}>{item.value}</p>
@@ -235,9 +235,9 @@ export default function Home() {
         <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "48px" }}>Tutto il necessario per un lungo soggiorno.</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "32px" }}>
           {[
-            {cat:"Lavoro",items:["WiFi 1Gbps","Scrivania dedicata"]},
-            {cat:"Cucina",items:["Completamente attrezzata","Lavastoviglie","Mercato settimanale e supermercato a due passi"]},
-            {cat:"Comfort",items:["Ventilazione e riscaldamento","Lavatrice","Divano letto nel soggiorno per 1 o 2 ospiti aggiuntivi","Televisione"]},
+            {cat:"Lavoro",items:["WiFi","Scrivania dedicata"]},
+            {cat:"Cucina",items:["Completamente attrezzata","Con fuochi e forno a gas professionali","Lavastoviglie","Mercato settimanale e supermercato a due passi"]},
+            {cat:"Comfort",items:["Ventilazione e riscaldamento autonomo","Lavatrice","Divano letto nel soggiorno per 1 o 2 ospiti aggiuntivi"]},
             {cat:"Extra",items:["Parcheggio privato e sicurizzato","Deposito biciclette","Montascale a poltroncina"]},
           ].map((group) => (
             <div key={group.cat}>
@@ -258,11 +258,11 @@ export default function Home() {
           <div>
             <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Posizione</p>
             <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "24px" }}>Città della Pieve, Umbria.</h2>
-            <p style={{ fontSize: "0.9rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "32px" }}>Città della Pieve, in Umbria, sorge arroccata su un colle a circa 508 metri di altitudine, affacciata sulla Val di Chiana e a pochi chilometri dal confine con la Toscana. È un borgo medievale autentico, costruito in gran parte in mattoni a vista, con vicoli silenziosi, scorci suggestivi e un’atmosfera elegante e senza tempo. Città natale del Perugino, conserva un forte legame con l’arte e la tradizione.
+            <p style={{ fontSize: "0.9rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "32px" }}>Città della Pieve, in Umbria, sorge arroccata su un colle a circa 508 metri di altitudine, affacciata sulla Val di Chiana e a pochi chilometri dal confine con la Toscana. È un borgo medievale autentico, costruito in gran parte in mattoni a vista, con vicoli silenziosi, scorci suggestivi e un’atmosfera elegante e senza tempo. Città natale del pittore Pietro Perugino, conserva un forte legame con l’arte e la tradizione.
 
-Pur mantenendo il fascino di un segreto umbro ancora poco conosciuto, Città della Pieve è un paese vivo e ricco di eventi durante tutto l’anno: dall’Infiorata al Palio dei Terzieri, da Zafferiamo a molte altre manifestazioni culturali e gastronomiche. Il borgo offre inoltre ristoranti di qualità dove scoprire la cucina umbra, tra sapori autentici, prodotti locali e ospitalità genuina.
+Pur mantenendo il fascino di un borgo umbro ancora poco conosciuto, Città della Pieve è un paese vivo e ricco di eventi durante tutto l’anno: dall’Infiorata al Palio dei Terzieri, da Zafferiamo a molte altre manifestazioni culturali e gastronomiche. Il borgo offre inoltre ristoranti di qualità dove scoprire la cucina umbra, tra sapori autentici, prodotti locali e ospitalità genuina.
 
-Uno dei suoi grandi vantaggi è la posizione strategica, ideale per scoprire l’Umbria, la Toscana e alcune delle città più belle del Centro Italia. Città della Pieve si trova a circa 10 minuti dall’uscita dell’autostrada A1 e vicino alla stazione ferroviaria di Chiusi-Chianciano Terme. In macchina si raggiungono facilmente:</p>
+Uno dei suoi grandi vantaggi è la posizione strategica, ideale per scoprire l’Umbria, la Toscana e alcune delle città più belle del Centro Italia. Città della Pieve si trova a circa 15 minuti dalle uscite Fabro o Chiusi-Chianciano dell’autostrada A1 (Milano-Napoli) e vicino alla stazione ferroviaria di Chiusi-Chianciano Terme. In macchina si raggiungono facilmente:</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               {["Siena in circa 45 minuti","Perugia in circa 45 minuti","Firenze in circa 1h30","Roma in circa 1h30"].map((item) => (
                 <div key={item} style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "0.82rem", color: "#4A4A4A" }}>
@@ -279,24 +279,24 @@ Uno dei suoi grandi vantaggi è la posizione strategica, ideale per scoprire l�
       {/* RATES */}
       <section id="rates" style={{ padding: "60px 24px", maxWidth: "1300px", margin: "0 auto" }}>
         <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Tariffe</p>
-        <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "48px" }}>Prezzi mensili con utenze incluse.</h2>
+        <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "48px" }}>Prezzi mensili</h2>
         
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", maxWidth: "400px", margin: "0 auto" }}>
           {[
-            {period:"Bassa stagione",months:"Nov - Mar",price:"900",featured:false},
-            {period:"Media stagione",months:"Apr-Giu e Set-Ott",price:"1.000",featured:true},
-            {period:"Alta stagione",months:"Lug - Ago",price:"1.200",featured:false},
+            {period:"Bassa stagione",months:"Nov - Mar",price:"900",note:"al mese, utenze a consumo",featured:false},
+            {period:"Media stagione",months:"Apr-Giu e Set-Ott",price:"1.000",note:"al mese, utenze a consumo",featured:true},
+            {period:"Alta stagione",months:"Lug - Ago",price:"1.200",note:"al mese, utenze incluse",featured:false},
           ].map((rate) => (
             <div key={rate.period} style={{ background: rate.featured ? "#2A2A2A" : "#EDE7DB", padding: "40px 32px", color: rate.featured ? "#FAF8F4" : "#2A2A2A" }}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: rate.featured ? "#7A9FB0" : "#38596d", marginBottom: "8px" }}>{rate.period}</p>
               <p style={{ fontSize: "0.9rem", color: rate.featured ? "rgba(250,248,244,0.5)" : "#888", marginBottom: "24px" }}>{rate.months}</p>
               <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "3rem", fontWeight: 300, marginBottom: "8px" }}>{"€" + rate.price}</p>
-              <p style={{ fontSize: "0.85rem", color: rate.featured ? "rgba(250,248,244,0.5)" : "#888", marginBottom: "32px" }}>al mese, utenze incluse</p>
+              <p style={{ fontSize: "0.85rem", color: rate.featured ? "rgba(250,248,244,0.5)" : "#888", marginBottom: "32px" }}>{rate.note}</p>
 
             </div>
           ))}
         </div>
-        <p style={{ fontSize: "0.85rem", color: "#888", marginTop: "24px", textAlign: "center" }}>Soggiorno minimo: 1 mese · Utenze incluse</p>
+        <p style={{ fontSize: "0.85rem", color: "#888", marginTop: "24px", textAlign: "center" }}>Soggiorno minimo: 1 mese · Animali non ammessi · Prezzi su richiesta per contratti di 12 mesi o più</p>
       </section>
 
       {/* CONTATTO + CALENDARIO */}
@@ -337,7 +337,7 @@ Uno dei suoi grandi vantaggi è la posizione strategica, ideale per scoprire l�
 
             {/* FOOTER */}
       <footer style={{ background: "#1A1A1A", color: "rgba(250,248,244,0.4)", padding: "32px 48px", display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "0.75rem", letterSpacing: "0.1em" }}>
-        <span style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "0.82rem", letterSpacing: "0.4em", fontWeight: 300, color: "rgba(250,248,244,0.7)" }}>Le Finestre</span>
+        <img src="/logo.png" alt="Le Finestre" style={{ height: "24px", objectFit: "contain" }} />
         <span>2026 · Città della Pieve · Tutti i diritti riservati</span>
       </footer>
 

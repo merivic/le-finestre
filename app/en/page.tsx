@@ -7,11 +7,11 @@ const UNAVAILABLE: string[] = [
 ]
 
 const MONTHS = [
-  "Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno",
-  "Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"
+  "January","February","March","April","May","June",
+  "July","August","September","October","November","December"
 ]
 
-const DAYS = ["Lu","Ma","Me","Gi","Ve","Sa","Do"]
+const DAYS = ["Mo","Tu","We","Th","Fr","Sa","Su"]
 
 function CalendarWidget() {
   const [current, setCurrent] = React.useState(new Date(2026, 6, 1))
@@ -179,13 +179,13 @@ export default function Home() {
       {/* APARTMENT */}
       <section id="apartment" style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
         <p style={{ fontSize: "0.82rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "24px", fontStyle: "normal" }}>
-          Le Finestre is a recently renovated 85 sqm apartment located at the entrance of the historic centre of Città della Pieve, on the top floor of an elegant early 20th-century building. The apartment features two spacious bedrooms, one of which has a desk, two bathrooms, a large living room and a fully equipped kitchen. The apartment is on the second floor, with no lift. A stairlift is available to assist access.
+          Le Finestre is a recently renovated 85 sqm apartment located at the entrance of the historic centre of Città della Pieve, on the top floor of an elegant early 20th-century building. The apartment features two spacious bedrooms, one of which has a desk, two bathrooms, a large living room and a fully equipped kitchen. The apartment is on the second floor, with no lift. A stairlift is available to assist access for people with reduced mobility.
         </p>
         <p style={{ fontSize: "0.82rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "48px" }}>
-          Its most distinctive feature is the extraordinary 360-degree view over Città della Pieve and the surrounding Umbrian landscape. Its large windows flood the rooms with light and offer unique glimpses of Lake Trasimeno, Monteleone, Monte Arale, the medieval fortress and the historic centre. The apartment also includes a private and secure parking space.
+          Its most distinctive feature is the extraordinary view over Città della Pieve and the surrounding Umbrian landscape. Its large windows flood the rooms with light and offer unique glimpses of Lake Trasimeno, Monte Cetona, Montegabbione, Monte Arale, the medieval fortress and the historic centre. The apartment also includes a private and secure parking space.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", maxWidth: "400px", margin: "0 auto" }}>
-          {[{label:"Size",value:"85 m²"},{label:"Bedrooms",value:"2"},{label:"Bathrooms",value:"2"},{label:"Guests",value:"Up to 4"},{label:"Min. Stay",value:"4 weeks"},{label:"Floor",value:"2° piano"}].map((item) => (
+          {[{label:"Size",value:"85 m²"},{label:"Bedrooms",value:"2"},{label:"Bathrooms",value:"2"},{label:"Guests",value:"Up to 4"},{label:"Min. Stay",value:"4 weeks"},{label:"Floor",value:"2nd and top floor"}].map((item) => (
             <div key={item.label} style={{ borderTop: "1px solid #D4C9B0", paddingTop: "16px" }}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: "#999", marginBottom: "6px" }}>{item.label}</p>
               <p style={{ fontSize: "0.82rem", fontWeight: 400, color: "#2A2A2A" }}>{item.value}</p>
@@ -231,10 +231,10 @@ export default function Home() {
         <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "48px" }}>Everything you need for a long stay.</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "32px" }}>
           {[
-            {cat:"Work",items:["WiFi 1Gbps","Dedicated desk"]},
-            {cat:"Kitchen",items:["Fully equipped","Dishwasher","Weekly market and supermarket nearby"]},
-            {cat:"Comfort",items:["A/C & heating","Washing machine","Sofa bed in living room for 1 or 2 extra guests","Television"]},
-            {cat:"Extras",items:["Private and secure parking","Bike storage","Stairlift"]},
+            {cat:"Work",items:["WiFi","Dedicated desk"]},
+            {cat:"Kitchen",items:["Fully equipped","Professional gas hob and oven","Dishwasher","Weekly market and supermarket nearby"]},
+            {cat:"Comfort",items:["Independent A/C & heating","Washing machine","Sofa bed in living room for 1 or 2 extra guests"]},
+            {cat:"Extras",items:["Free parking with private access","Bike storage","Stairlift"]},
           ].map((group) => (
             <div key={group.cat}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: "#38596d", marginBottom: "16px", fontWeight: 600 }}>{group.cat}</p>
@@ -254,11 +254,11 @@ export default function Home() {
           <div>
             <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Location</p>
             <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "24px" }}>Città della Pieve, Umbria.</h2>
-            <p style={{ fontSize: "0.9rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "32px" }}>Perched on a hilltop at 508m, Città della Pieve is one of Umbria's best-kept secrets. A medieval town built largely in exposed brick, with quiet alleys, evocative views and a timeless, elegant atmosphere. Birthplace of the Renaissance painter Perugino, it retains a strong connection with art and tradition.
+            <p style={{ fontSize: "0.9rem", lineHeight: 1.9, color: "#4A4A4A", marginBottom: "32px" }}>Perched on a hilltop at 508m, Città della Pieve is one of Umbria's best-kept secrets. A medieval town built largely in exposed brick, with quiet alleys, evocative views and a timeless, elegant atmosphere. Birthplace of the painter Pietro Perugino, it retains a strong connection with art and tradition.
 
-While retaining its charm as a little-known Umbrian secret, Città della Pieve is a lively town with events throughout the year: from the Infiorata to the Palio dei Terzieri, from Zafferiamo to many other cultural and gastronomic events. The town also offers quality restaurants to discover Umbrian cuisine.
+While retaining its charm as a little-known Umbrian village, Città della Pieve is a lively town with events throughout the year: from the Infiorata to the Palio dei Terzieri, from Zafferiamo to many other cultural and gastronomic events. The town also offers quality restaurants to discover Umbrian cuisine.
 
-One of its great advantages is its strategic location, ideal for exploring Umbria, Tuscany and some of the most beautiful cities in Central Italy. Città della Pieve is about 10 minutes from the A1 motorway exit and close to Chiusi-Chianciano Terme train station. By car you can easily reach:</p>
+One of its great advantages is its strategic location, ideal for exploring Umbria, Tuscany and some of the most beautiful cities in Central Italy. Città della Pieve is about 15 minutes from the Fabro or Chiusi-Chianciano exits of the A1 motorway (Milan-Naples) and close to Chiusi-Chianciano Terme train station. By car you can easily reach:</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               {["Siena in about 45 minutes","Perugia in about 45 minutes","Florence in about 1h30","Rome in about 1h30"].map((item) => (
                 <div key={item} style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "0.82rem", color: "#4A4A4A" }}>
@@ -275,24 +275,24 @@ One of its great advantages is its strategic location, ideal for exploring Umbri
       {/* RATES */}
       <section id="rates" style={{ padding: "60px 24px", maxWidth: "1200px", margin: "0 auto" }}>
         <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", color: "#38596d", marginBottom: "16px" }}>Rates</p>
-        <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "48px" }}>Monthly rates, utilities included.</h2>
+        <h2 style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 400, color: "#2A2A2A", marginBottom: "48px" }}>Monthly rates</h2>
         
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", maxWidth: "400px", margin: "0 auto" }}>
           {[
-            {period:"Low Season",months:"Nov - Mar",price:"900",featured:false},
-            {period:"Mid Season",months:"Apr-Jun & Sep-Oct",price:"1.000",featured:true},
-            {period:"Jul - Aug",months:"Lug - Ago",price:"1.200",featured:false},
+            {period:"Low Season",months:"Nov - Mar",price:"900",note:"per month, utilities extra",featured:false},
+            {period:"Mid Season",months:"Apr-Jun & Sep-Oct",price:"1.000",note:"per month, utilities extra",featured:true},
+            {period:"High Season",months:"Jul - Aug",price:"1.200",note:"per month, utilities included",featured:false},
           ].map((rate) => (
             <div key={rate.period} style={{ background: rate.featured ? "#2A2A2A" : "#EDE7DB", padding: "40px 32px", color: rate.featured ? "#FAF8F4" : "#2A2A2A" }}>
               <p style={{ fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "none", color: rate.featured ? "#7A9FB0" : "#38596d", marginBottom: "8px" }}>{rate.period}</p>
               <p style={{ fontSize: "0.9rem", color: rate.featured ? "rgba(250,248,244,0.5)" : "#888", marginBottom: "24px" }}>{rate.months}</p>
               <p style={{ fontFamily: "'Tenor Sans', Georgia, sans-serif", fontSize: "3rem", fontWeight: 300, marginBottom: "8px" }}>{"€" + rate.price}</p>
-              <p style={{ fontSize: "0.85rem", color: rate.featured ? "rgba(250,248,244,0.5)" : "#888", marginBottom: "32px" }}>per month, utilities included</p>
+              <p style={{ fontSize: "0.85rem", color: rate.featured ? "rgba(250,248,244,0.5)" : "#888", marginBottom: "32px" }}>{rate.note}</p>
 
             </div>
           ))}
         </div>
-        <p style={{ fontSize: "0.85rem", color: "#888", marginTop: "24px", textAlign: "center" }}>Minimum stay: 1 month · Utilities included</p>
+        <p style={{ fontSize: "0.85rem", color: "#888", marginTop: "24px", textAlign: "center" }}>Minimum stay: 1 month · No pets · Price on request for 12-month contracts or longer</p>
       </section>
 
       {/* CONTATTO + CALENDARIO */}
